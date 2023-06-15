@@ -3,6 +3,7 @@
 config_file="/var/www/html/wp-config.php"
 
 if [ ! -f "$config_file" ]; then
+	sleep 5
     mkdir -p /var/www/html
     chown -R www-data:www-data /var/www/html
     cd /var/www/html
